@@ -2,6 +2,7 @@ import './App.css';
 import { Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { client } from "./client";
+import Navbar from './Components/Navbar';
 
 function App() {
   const [recipes, setRecipes] = useState([])
@@ -16,12 +17,15 @@ function App() {
 console.group(recipes)
   return (
     <div className="App">
+      <Navbar />  
+
+      <h1>Just a test</h1>
 
       
     
-    <Routes>
+    {/* <Routes>
       <Route path="/" components={<h2>Test</h2> } />
-    </Routes>
+    </Routes> */}
     </div>
   );
 }
