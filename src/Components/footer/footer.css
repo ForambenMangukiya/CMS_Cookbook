@@ -1,0 +1,35 @@
+.footer_content{
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.footer_conact-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_right {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+
+.footer_right svg {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.footer-a{
+  list-style: none;
+}
+
+.footer_center {
+  width: 80vh;
+}
+
+.copyright{
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}

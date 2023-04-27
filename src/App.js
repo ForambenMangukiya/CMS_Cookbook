@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { client } from "./client";
 import Navbar from './Components/Navbar';
+import Footer from './Components/footer/Footer';
 
 function App() {
   const [recipes, setRecipes] = useState([])
@@ -26,6 +27,8 @@ console.group(recipes)
     {/* <Routes>
       <Route path="/" components={<h2>Test</h2> } />
     </Routes> */}
+
+    <Footer />
     </div>
   );
 }
