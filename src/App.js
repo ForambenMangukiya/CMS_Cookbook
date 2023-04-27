@@ -5,7 +5,7 @@ import { client } from "./client";
 import Navbar from './Components/Navbar';
 import Footer from './Components/footer/Footer';
 
-function App() {
+export default function App() {
   const [recipes, setRecipes] = useState([])
   useEffect(() => {
     client
