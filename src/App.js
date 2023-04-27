@@ -5,7 +5,7 @@ import { client } from "./client";
 import Navbar from './Components/Navbar';
 import Footer from './Components/footer/Footer';
 
-function App() {
+export default function App() {
   const [recipes, setRecipes] = useState([])
   useEffect(() => {
     client
@@ -21,8 +21,7 @@ console.group(recipes)
       <Navbar />  
 
       <h1>Just a test</h1>
-
-      
+       
     
     {/* <Routes>
       <Route path="/" components={<h2>Test</h2> } />
