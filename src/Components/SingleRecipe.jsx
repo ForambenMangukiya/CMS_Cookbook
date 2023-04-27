@@ -12,8 +12,7 @@ export default function SingleRecipe() {
             <div className="singlerecipe__body_photo">
                 <img src="https://www.melissashealthyliving.com/wp-content/uploads/2013/07/Tomato-Basil-Quinoa-Pasta-500x500.jpg" alt="" />
             </div>
-            <div className="singlerecipe__body_context_wrapper">
-            Name:
+            <div className="singlerecipe__body_context_wrapper">                
                 <div className="singlerecipe__body_ingredients">
                     <h3>placeholder</h3> <br />
                     
