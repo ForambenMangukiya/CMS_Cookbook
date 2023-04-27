@@ -1,12 +1,8 @@
 import './App.css';
-import { Route, Router, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { client } from "./client";
-import About from "./components/About";
-import Contact from "./components/Contact";
-
-import Categories from './components/Categories';
-import { BrowserRouter } from "react-router-dom";
+import Navbar from './Components/Navbar';
 
 function App() {
   const [recipes, setRecipes] = useState([])
@@ -19,24 +15,17 @@ function App() {
     .catch(err => console.log(err));
   }, []);
 console.group(recipes)
-
-
   return (
     <div className="App">
-    <Routes>
+      <Navbar />  
+
+      <h1>Just a test</h1>
+
+      
+    
+    {/* <Routes>
       <Route path="/" components={<h2>Test</h2> } />
-      <Route path='/' components={Home} />
-      <Route path='/' components={About} />
-      <Route path='/' components={Contact} />
-      <Route path='/' components={Categories} />
-    </Routes>
-    <About/>
-    <Contact/>
-    
-    <Categories/>
+    </Routes> */}
     </div>
-    
   );
 }
-
-export default App;
