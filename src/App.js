@@ -4,8 +4,7 @@ import { useState, useEffect } from "react";
 import { client } from "./client";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Header from "./components/Header";
-import Home from "./components/Home";
+
 import Categories from './components/Categories';
 import { BrowserRouter } from "react-router-dom";
 
@@ -23,22 +22,17 @@ console.group(recipes)
 
 
   return (
-    
     <div className="App">
-
     <Routes>
       <Route path="/" components={<h2>Test</h2> } />
       <Route path='/' components={Home} />
       <Route path='/' components={About} />
       <Route path='/' components={Contact} />
       <Route path='/' components={Categories} />
-
-
     </Routes>
     <About/>
     <Contact/>
-    <Header/>
-    <Home/>
+    
     <Categories/>
     </div>
     
