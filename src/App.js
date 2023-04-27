@@ -29,5 +29,3 @@ console.group(recipes)
     </div>
   );
 }
-
-export default App;

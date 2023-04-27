@@ -23,23 +23,20 @@
 
 .singlerecipe__body_context_wrapper {
   display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-around;
-    border: 2px solid black;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid black;
 }
 
 .singlerecipe__body_ingredients {
   border: 2px solid black;
-
 }
 
 .singlerecipe__body_instructions {
   border: 2px solid black;
-
 }
 
 .singlerecipe__footer {
   border: 2px solid black;
-
 }
