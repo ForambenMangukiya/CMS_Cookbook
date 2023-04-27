@@ -21,8 +21,7 @@ console.group(recipes)
       <Navbar />  
 
       <h1>Just a test</h1>
-
-      
+       
     
     {/* <Routes>
       <Route path="/" components={<h2>Test</h2> } />
