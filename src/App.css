@@ -1,3 +1,19 @@
+/* =========App.js =================== */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(./img/landing_page_bckg.jpg);
+  background-size: 100%;
+  background-position: 100%;
+  background-repeat: no-repeat;
+}
+
+.App_wrap{
+  flex: 1;
+}
+
 /* =========Single Recipe Page =================== */
 
 .singlerecipe__wrapper {

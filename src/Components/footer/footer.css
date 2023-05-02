@@ -1,7 +1,17 @@
 .footer_content{
+  max-height: 22vh;
   display: flex;
   gap: 3rem;
   justify-content: center;
+  color: red;
+  position: relative;
+}
+
+.footer_wrap{
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer_conact-form{
@@ -9,7 +19,21 @@
   flex-direction: column;
 }
 
+.footer_submit{
+  background: transparent;
+  color: red;
+  border: 1px solid red;
+  cursor: pointer;
+}
+
+.footer_submit:hover{
+  background: transparent;
+  color: royalblue;
+  border: 1px solid royalblue;
+}
+
 .footer_right {
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -17,19 +41,63 @@
 }
 
 .footer_right svg {
+  color: red;
   font-size: 2rem;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
-.footer-a{
+.footer_right svg:hover{
+  color: royalblue;
+  font-size: 2.1rem;
+}
+
+.footer-links{
   list-style: none;
 }
 
+.footer_input{
+  background: transparent;
+  border: red 1px solid;
+  color: red;
+}
+
+.footer_submit{
+  width: fit-content;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
 .footer_center {
+  padding-top: 3rem;
   width: 80vh;
 }
 
+.group_members{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.group_members_links{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.group_members_link{
+  text-decoration: none;
+  color: red;
+  cursor: pointer;
+}
+
+.group_members_link:hover{
+  color: royalblue;
+}
+
 .copyright{
+  align-items: center;
+  color: red;
   padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
 }
