@@ -18,6 +18,7 @@ export default function App() {
 console.group(recipes)
   return (
     <div className="App">
+      <div className="App_wrap">
       <Navbar />  
 
       <h1>Just a test</h1>
@@ -26,7 +27,7 @@ console.group(recipes)
     {/* <Routes>
       <Route path="/" components={<h2>Test</h2> } />
     </Routes> */}
-
+      </div>
     <Footer />
     </div>
   );
