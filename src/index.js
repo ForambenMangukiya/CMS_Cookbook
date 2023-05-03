@@ -5,7 +5,6 @@ import App from './App';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SingleRecipe from './Components/SingleRecipe';
 
-
 const router = createBrowserRouter([
   {
     path: "/",

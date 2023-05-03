@@ -1,5 +1,5 @@
 import css from "./footer.css";
-import Navbar from '../Navbar'
+
 import FooterLeft from './FooterLeft'
 import FooterRight from './FooterRight'
 import FooterCenter from "./FooterCenter";
@@ -7,7 +7,7 @@ import FooterCenter from "./FooterCenter";
 export default function Footer(){
   return(
     <div className="footer">
-      <Navbar />
+     
       <br />
       <hr className="footer_hr" />
       <br />
