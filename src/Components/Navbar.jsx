@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 
 
 export default function Navbar({recipes}) {
+  console.log("This is logging the NAVBAR", recipes);
   return (
     <div className="navbar">
 
