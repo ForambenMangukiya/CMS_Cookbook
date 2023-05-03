@@ -6,8 +6,10 @@ import { useLocation, useParams, useNavigate } from "react-router-dom";
 export default function SingleRecipe() {
     const location = useLocation();
     const propsData = location.state;
+
+   
         
-    console.log("This is singlerecipe",propsData.recipes)
+    console.log("This is singlerecipe",propsData.recipes[0].fields.image[0].fields.file.url)
 
     let ingredients = propsData.recipes[0].fields.ingredients.map((lines, index) => <li key={index}>{lines}</li>)
     console.log("this is ingredients",ingredients)
@@ -21,7 +23,7 @@ export default function SingleRecipe() {
         </div>
         <div className="singlerecipe__body_wrapper">
             <div className="singlerecipe__body_photo">
-                <img src="https://www.melissashealthyliving.com/wp-content/uploads/2013/07/Tomato-Basil-Quinoa-Pasta-500x500.jpg" alt="" />
+                <img src={propsData.recipes[0].fields.image[0].fields.file.url} alt="" />
             </div>
             <div className="singlerecipe__body_context_wrapper">
                 <div className="singlerecipe__body_context_title">
