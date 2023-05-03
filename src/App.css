@@ -41,8 +41,13 @@
   display: flex;
   width: 100%;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   border: 2px solid black;
+  padding: 10px;
+}
+
+.singlerecipe__body_context_title {
+  
 }
 
 .singlerecipe__body_ingredients {
