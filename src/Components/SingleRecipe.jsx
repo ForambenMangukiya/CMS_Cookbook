@@ -1,8 +1,12 @@
 import Navbar from "./Navbar";
+import { useLocation } from "react-router-dom";
 
 
 
 export default function SingleRecipe() {
+    const location = useLocation();
+    const propsData = location.state;
+    console.log("This is logging the SingleRecipes page", propsData.recipes);
   return (
     <div className="singlerecipe__wrapper">
         <div className="singlerecipe__header">

@@ -19,7 +19,7 @@ console.group(recipes)
   return (
     <div className="App">
       <div className="App_wrap">
-      <Navbar />  
+      <Navbar recipes={recipes} />  
 
       <h1>Just a test</h1>
        
