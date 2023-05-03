@@ -9,10 +9,10 @@ export default function SingleRecipe() {
         
     console.log("This is singlerecipe",propsData.recipes)
 
-    let ingredients = propsData.recipes[0].fields.ingredients.map((lines) => <li>{lines}</li>)
+    let ingredients = propsData.recipes[0].fields.ingredients.map((lines, index) => <li key={index}>{lines}</li>)
     console.log("this is ingredients",ingredients)
 
-    let instructions = propsData.recipes[0].fields.instructions.map((lines) => <li>{lines}</li>)
+    let instructions = propsData.recipes[0].fields.instructions.map((lines, index) => <li key={index}>{lines}</li>)
 
   return (
     <div className="singlerecipe__wrapper">
