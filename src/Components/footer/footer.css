@@ -1,14 +1,17 @@
 .footer_content{
-  max-height: 22vh;
+  max-height: 25rem;
   display: flex;
   gap: 3rem;
   justify-content: center;
-  color: red;
+  font-size: larger;
+  color: white;
+  text-shadow: 0 0 2px black;
+  -webkit-text-stroke: .5px black;
   position: relative;
 }
 
 .footer_wrap{
-  background-color: yellow;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,9 +24,16 @@
 
 .footer_submit{
   background: transparent;
-  color: red;
-  border: 1px solid red;
+  font-size: large;
+  width: fit-content;
+  margin-top: 2rem;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 2px black;
+  -webkit-text-stroke: 0.5px black;
+  border: 1.5px solid white;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .footer_submit:hover{
@@ -41,15 +51,17 @@
 }
 
 .footer_right svg {
-  color: red;
-  font-size: 2rem;
+  color: white;
+  text-shadow: 0 0 2px black;
+  -webkit-text-stroke: 0.5px black;
+  font-size: 2.5rem;
   padding: 0.5rem;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .footer_right svg:hover{
   color: royalblue;
-  font-size: 2.1rem;
 }
 
 .footer-links{
@@ -58,15 +70,12 @@
 
 .footer_input{
   background: transparent;
-  border: red 1px solid;
-  color: red;
+  border: white 1.5px solid;
+  color: white;
+  text-shadow: 0 0 2px black;
+  -webkit-text-stroke: 0.5px black;
 }
 
-.footer_submit{
-  width: fit-content;
-  margin-top: 2rem;
-  justify-content: center;
-}
 
 .footer_center {
   padding-top: 3rem;
@@ -87,17 +96,23 @@
 
 .group_members_link{
   text-decoration: none;
-  color: red;
+  color: white;
+  text-shadow: 0 0 2px black;
+  -webkit-text-stroke: 0.5px black;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .group_members_link:hover{
   color: royalblue;
+
 }
 
 .copyright{
   align-items: center;
-  color: red;
+  color: white;
+  text-shadow: 0 0 2px black;
+  -webkit-text-stroke: 0.5px black;
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
