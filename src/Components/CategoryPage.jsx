@@ -1,11 +1,16 @@
 import { Typography, Button, AppBar, CardContent, CardActions, CardMedia, CssBaseline, Grid, Toolbar, Container,Select, FormControl, InputLabel, MenuItem } from '@mui/material'
 import { useState, useEffect } from 'react'
 import CategoryItem from './CategoryItem'
+import { useLocation, useParams, useNavigate } from "react-router-dom";
 
 
 
 
 export default function CategoryPage ({fullData}) {
+    
+    const location = useLocation();
+    const propsData = location.state;
+
     const [ dropDown,setDropDown ] = useState("all")
     const handleChange = (e) => {
         setDropDown(e.target.value)
