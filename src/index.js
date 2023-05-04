@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SingleRecipe from './Components/SingleRecipe';
+import CategoryPage from './Components/CategoryPage';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/singlerecipe/:id",
     element: <SingleRecipe/>,
+  },
+  {
+    path: "/categories",
+    element: <CategoryPage />,
   }
 ]);
 
