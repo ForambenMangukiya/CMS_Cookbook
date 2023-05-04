@@ -7,7 +7,7 @@
   display: grid;
   grid-template-areas: "logo nav";
   /* Cosmetics */
-  background-color: #282c34;
+  background-color: transparent;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -39,7 +39,7 @@
   justify-items: center;
 }
 .Nav a {
-  color: #fff;
+  color: white;
   font-size: 20px;
   font-weight: 500;
   transition: 0.5s;
