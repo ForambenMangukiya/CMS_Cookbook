@@ -53,7 +53,7 @@ export default function Navbar({recipes}) {
       
         <NavLink  to="/">Home</NavLink>
         <NavLink to="/singlerecipe" state={{ recipes }}>Single Recipe</NavLink>
-        <NavLink  to="/categories"> Categories </NavLink>
+        <NavLink  to="/categories" state={{ recipes }}> Categories </NavLink>
         <NavLink  to="/about">About</NavLink>
         </nav>
 
