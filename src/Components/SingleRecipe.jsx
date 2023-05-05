@@ -11,10 +11,10 @@ export default function SingleRecipe() {
     const location = useLocation();
     const propsData = location.state;
 
+
     // const oneRecipe = propsData.recipes.find(
     //     (recipe) => recipe.fields.id === Number(recipeID)
     // );
-
    
     console.log("This is recipes", propsData?.recipes)    
     console.log("This is singlerecipe ID",propsData?.recipes[8].fields.id)
