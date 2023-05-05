@@ -6,7 +6,7 @@ import { useLocation, useParams, useNavigate } from "react-router-dom";
 export default function SingleRecipe() {
     const location = useLocation();
     const propsData = location.state;
-
+    
    
         
     console.log("This is singlerecipe",propsData.recipes[0].fields.image[0].fields.file.url)
