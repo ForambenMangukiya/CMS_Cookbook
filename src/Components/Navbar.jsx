@@ -30,8 +30,6 @@ export default function Navbar({recipes}) {
     setNavVisibility(!isNavVisible);
   };
 
-
-  console.log("This is logging the NAVBAR", recipes);
   return (
 
     <div className="Header">
@@ -52,7 +50,7 @@ export default function Navbar({recipes}) {
     <nav className="Nav">
       
         <NavLink  to="/">Home</NavLink>
-        <NavLink to="/singlerecipe" state={{ recipes }}>Single Recipe</NavLink>
+        <NavLink to="/singlerecipe/" state={{ recipes }}>Single Recipe</NavLink>
         <NavLink  to="/categories" state={{ recipes }}> Categories </NavLink>
         <NavLink  to="/about">About</NavLink>
         </nav>
