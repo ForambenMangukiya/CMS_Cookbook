@@ -7,7 +7,6 @@
   background-image: url(./img/Landing_page_2_Image.webp);
   position: fixed;
   min-width: 100%;
-  min-width: 100%;
   background-size: 100%;
   background-position: 100%;
   background-repeat: no-repeat;
@@ -24,20 +23,21 @@
   height: 100vh;
   flex-direction: column;
   justify-content: space-between;
+  color: rgb(0, 0, 0);
+
 }
 
 .singlerecipe__header {
-  border: 2px solid black;
+ 
 }
 
 .singlerecipe__body_wrapper {
   display: flex;
-  border: 2px solid black;
+  height: 65%;
 }
 
 .singlerecipe__body_photo {
   padding: 15px;
-  border: 2px solid black;
 }
 
 .singlerecipe__body_photo img {  
@@ -50,24 +50,35 @@
   width: 100%;
   flex-direction: column;
   justify-content: space-between;
-  border: 2px solid black;
   padding: 10px;
 }
 
 .singlerecipe__body_context_title {
-  
+  display: flex;
+  justify-content: space-around;
 }
 
 .singlerecipe__body_ingredients {
-  border: 2px solid black;
+  padding: 10px;
+}
+
+.singlerecipe__body_ingredients h5 ul {
+  list-style-type: decimal;
+  padding-left: 20px;
 }
 
 .singlerecipe__body_instructions {
-  border: 2px solid black;
+  list-style: none;
+  padding: 10px;
+  width: 65%;
+}
+
+.singlerecipe__body_instructions h5 ul {
+  list-style-type: none;
+  padding-left: 5px;
 }
 
 .singlerecipe__footer {
-  border: 2px solid black;
 }
 
 /* =========Category Page =================== */
