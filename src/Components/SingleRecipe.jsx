@@ -7,7 +7,6 @@ import { Typography, Rating } from "@mui/material";
 
 export default function SingleRecipe() {
     const { id } = useParams();
-
     const location = useLocation();
     const propsData = location.state;
 
