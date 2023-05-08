@@ -155,6 +155,14 @@ img {
 
 @media (max-width: 850px) {
 
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+  }
+
   .singlerecipe__wrapper {
     display: flex;
     height: 100vh;
@@ -198,6 +206,7 @@ img {
     flex-direction: column;
     top: 40px;
     position: relative;
+    height: 50%;
   }
 
   .singlerecipe__body_instructions {
@@ -210,4 +219,23 @@ img {
     max-height: 400px;
   }
 
+  .singlerecipe__footer {
+    flex-shrink: 0;
+  }
+
+  h5 {
+    max-height: 100%;
+    overflow: hidden;
+  }
+
+  img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-position: center;
+    background-position: center;
+    /* width: 100%; */
+    object-fit: scale-down;
+    aspect-ratio: unset;
+  }
+  
 }
