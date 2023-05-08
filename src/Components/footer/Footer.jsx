@@ -1,6 +1,5 @@
-import css from "./footer.css";
+import "./footer.css";
 
-import FooterLeft from './FooterLeft'
 import FooterRight from './FooterRight'
 import FooterCenter from "./FooterCenter";
 
@@ -9,11 +8,9 @@ export default function Footer(){
     <div className="footer">
       <div className="footer_wrap">
       <div className="footer_content">
-        <FooterLeft />
         <FooterCenter />
         <FooterRight />
       </div>
-        <br /><br /><br />
         <small className="copyright">&copy;All Copyright preserved to Grup-2 W6 WBS-WD#038</small>
       </div>
     </div>
