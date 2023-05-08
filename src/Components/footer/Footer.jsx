@@ -1,6 +1,5 @@
-import css from "./footer.css";
+import "./footer.css";
 
-import FooterLeft from './FooterLeft'
 import FooterRight from './FooterRight'
 import FooterCenter from "./FooterCenter";
 
