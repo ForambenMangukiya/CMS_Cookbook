@@ -89,11 +89,12 @@
   font-size: 1.6rem;
   stroke-width: .5;
   stroke: rgb(0, 0, 0);
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: all 0.5s ease;
 }
 
 .footer_right svg:hover{
+  transform: scale(1.1);
   color: royalblue;
   border: 1px solid royalblue;
   border-radius: 40%;
@@ -157,6 +158,8 @@
 }
 
 .group_members_link:hover{
+  transform: scale(1.1);
+  font-size: medium;
   color: royalblue;
   border: 1px solid royalblue;
 }
@@ -213,13 +216,18 @@
 
   .footer{
     height: auto;
-    margin: 1rem;
-    padding: 1rem;
-  } 
+    margin: 0 1em 0 1em;
+    padding: 0 1em 0 1em;
+  }
+  .footer_wrap{
+    margin: 0 1em 0 1em;
+    padding: 0 1em 1em 1em;
+  }
 
   .footer_content{
     padding: 0;
     flex-direction: column;
+    gap: 0;
   }
 
   .footer_right{
