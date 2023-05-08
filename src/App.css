@@ -70,6 +70,13 @@
   display: flex;
   justify-content: space-around;
 }
+.singlerecipe__body_context_title h2 {
+  margin: 0;
+}
+
+.css-iljtu2-MuiRating-root.Mui-disabled {
+  opacity: 1;
+}
 
 .singlerecipe__body_ingredients {
   padding: 10px;
@@ -134,4 +141,29 @@
     background-size: 300%;
     background-position: 50%;
   }
+}
+
+@media (max-width: 850px) {
+
+  .singlerecipe__body_wrapper {
+    display: flex;
+    height: 65%;
+    flex-wrap: wrap;
+  }
+
+  .singlerecipe__body_context_wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px 0px 10px;
+    gap: 10px;
+  }
+
+  .singlerecipe__body_context_title {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
 }
