@@ -8,7 +8,7 @@ export default function FooterCenter() {
       <div className="group_members">
         <h3 className="group_members_h3">Group 2</h3>
         <div className="group_members_links">
-          <a className="group_members_link" href="https://github.com/AdamN89"><samp>1.</samp>Adam Baralon</a>
+          <a className="group_members_link" href="https://github.com/AdamN89"><samp>1.</samp>Adam</a>
           <a className="group_members_link" href="https://github.com/antonsAccount"><samp>2.</samp>Anton</a>
           <a className="group_members_link" href="https://github.com/ForambenMangukiya"><samp>3.</samp>Foramben Mangukiya</a>
           <a className="group_members_link" href="https://github.com/Mundarana"><samp>4.</samp>Mohammad Awais Rana</a>

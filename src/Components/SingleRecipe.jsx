@@ -6,9 +6,10 @@ import { Typography, Rating } from "@mui/material";
 
 
 export default function SingleRecipe() {
+
     const { recipeId } = useParams();
     const navigate = useNavigate();
-
+    
     const location = useLocation();
     const propsData = location.state;
 
@@ -34,13 +35,12 @@ export default function SingleRecipe() {
         <button onClick={() => navigate(-1)}>THIS IS A TEST</button>
         <div className="singlerecipe__body_wrapper">
             <div className="singlerecipe__body_photo">
-                <img src={oneRecipe?.fields.image[0].fields.file.url} alt="" />
+                <img className="single_recipe_image" src={oneRecipe?.fields.image[0].fields.file.url} alt="" />
             </div>
             <div className="singlerecipe__body_context_wrapper">
                 <div className="singlerecipe__body_context_title">
-                    Name: {oneRecipe?.fields.name}    
-                    <Rating name="disabled" value={oneRecipe.fields.difficulty} max={3} disabled />
-                                 
+                    <h2>{oneRecipe?.fields.name}</h2>    
+                    <Typography component="legend" style={{ display:"flex", alignItems:"flex-end" }}>Difficulty <Rating name="disabled" style={{ opacity: 1 }} value={oneRecipe.fields.difficulty} max={3} disabled /></Typography>            
                 </div>                
                 <div className="singlerecipe__body_ingredients">
                     <h5>Ingredients: <ul>{ingredients}</ul></h5> <br />

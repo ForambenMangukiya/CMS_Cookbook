@@ -6,14 +6,16 @@ export default function CategoryItem ({name, image, id}) {
     const propsData = location.state;
 
     return (
-        <Link to={`/singlerecipe/${id}`} state={{ propsData }}>
-        <Grid item xs={6}  className='item' sx={{ mx: 'auto' }}>
+        <Grid item xs={6} md={4} xl={3} className='item' sx={{ mb: 1}}>
+            <Link to={`/singlerecipe/${id}`} state={{ propsData }}>
+
         <Card className='item' >
             <CardMedia component="img" src={image}/>
             <Typography variant="h6" align="center"> {name}</Typography>
         </Card>
-        </Grid>
-        {/* Rating Component */}
         </Link>
+        </Grid>
+        /* Rating Component */
+        
     )
 }
