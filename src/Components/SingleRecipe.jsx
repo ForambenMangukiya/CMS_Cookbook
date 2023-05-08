@@ -38,9 +38,8 @@ export default function SingleRecipe() {
             </div>
             <div className="singlerecipe__body_context_wrapper">
                 <div className="singlerecipe__body_context_title">
-                    Name: {oneRecipe?.fields.name}    
-                    <Rating name="disabled" value={oneRecipe.fields.difficulty} max={3} disabled />
-                                 
+                    <h2>{oneRecipe?.fields.name}</h2>    
+                    <Typography component="legend" style={{ display:"flex", alignItems:"flex-end" }}>Difficulty <Rating name="disabled" style={{ opacity: 1 }} value={oneRecipe.fields.difficulty} max={3} disabled /></Typography>            
                 </div>                
                 <div className="singlerecipe__body_ingredients">
                     <h5>Ingredients: <ul>{ingredients}</ul></h5> <br />
