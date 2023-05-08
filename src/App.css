@@ -123,8 +123,16 @@
   
 }
 
-
-
+img {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-position: center;
+    background-position: center;
+    /* width: 100%; */
+    object-fit: scale-down;
+    aspect-ratio: 1.2;  
+}
 
 /*============ Media Query ============*/
 
