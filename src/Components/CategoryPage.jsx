@@ -2,6 +2,7 @@ import { Typography, Button, AppBar, CardContent, CardActions, CardMedia, CssBas
 import { useState, useEffect } from 'react'
 import CategoryItem from './CategoryItem'
 import { useLocation, useParams, useNavigate } from "react-router-dom";
+import Navbar from './Navbar';
 
 
 
@@ -31,16 +32,17 @@ export default function CategoryPage () {
     },[dropDown])
     
     return (
-        <>
+        <div >
+            <Navbar />
             <CssBaseline />
             <main>
                 <div className="category_page">
-                    <Container maxWidth="sm">
+                    <Container maxWidth={'lg'} disableGutters>
                         <Typography variant="h3" align="center" color="textPrimary" gutterBottom>
                             Category Page
                         </Typography>
                         
-                        <FormControl fullWidth sx={{ m: 3 }}>
+                        <FormControl fullWidth sx={{ m: 3 }} disableGutters>
                         <InputLabel id="demo-simple-select-label">Cuisine</InputLabel>
                         <Select
                             labelId="demo-simple-select-label"
@@ -48,6 +50,7 @@ export default function CategoryPage () {
                             value={dropDown}
                             label="DropDown"
                             onChange={handleChange}
+                            sx={{ mr:5 }}
                         >
                             <MenuItem value={"All"}>All</MenuItem>
                             <MenuItem value={"Italian"}>Italian</MenuItem>
@@ -57,8 +60,9 @@ export default function CategoryPage () {
                         </Select>
                         </FormControl>
                         <div>
-                            
-                            <Grid container spacing={2} justify="center">
+               
+                            <Grid container spacing={2} sx={{ml:1,mr:5, 
+     }} >
                                 {data.map(i=>{
                                 return (<CategoryItem state={{ propsData }} name={i.fields.name} image={i.fields.image[0].fields.file.url} id={i.fields.id} key={i.fields.id} />)
                             })}
@@ -67,6 +71,6 @@ export default function CategoryPage () {
                     </Container>
                 </div>
             </main>
-        </>
+        </div>
     )
 }

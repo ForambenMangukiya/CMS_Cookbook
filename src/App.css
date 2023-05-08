@@ -114,13 +114,15 @@
 /* =========Category Page =================== */
 .category_page a {
   text-decoration: none;
-
+ 
 }
 .category_page .item:hover {
-  text-decoration: none;
-  background-color: rgb(231, 228, 228);
-  color:rgb(62, 61, 61);
+  /* text-decoration: none; */
+  /* background-color: rgb(193, 190, 190); */
+  /* color:rgb(62, 61, 61); */
+  
 }
+
 
 
 

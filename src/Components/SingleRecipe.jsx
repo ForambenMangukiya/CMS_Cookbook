@@ -6,9 +6,10 @@ import { Typography, Rating } from "@mui/material";
 
 
 export default function SingleRecipe() {
+
     const { recipeId } = useParams();
     const navigate = useNavigate();
-
+    
     const location = useLocation();
     const propsData = location.state;
 
