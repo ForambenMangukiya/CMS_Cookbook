@@ -52,7 +52,7 @@ export default function Navbar({recipes}) {
     <nav className="Nav">
       
         <NavLink  to="/">Home</NavLink>
-        <NavLink to="/singlerecipe/:recipeId" state={{ recipes }}>Single Recipe</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
         <NavLink  to="/categories" state={{ recipes }}> Categories </NavLink>
         <NavLink  to="/about">About</NavLink>
         </nav>

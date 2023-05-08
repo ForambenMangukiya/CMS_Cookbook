@@ -60,7 +60,7 @@ export default function CategoryPage () {
                             
                             <Grid container spacing={2} justify="center">
                                 {data.map(i=>{
-                                return (<CategoryItem name={i.fields.name} image={i.fields.image[0].fields.file.url} id={i.fields.id} key={i.fields.id} />)
+                                return (<CategoryItem state={{ propsData }} name={i.fields.name} image={i.fields.image[0].fields.file.url} id={i.fields.id} key={i.fields.id} />)
                             })}
                             </Grid>
                         </div>
