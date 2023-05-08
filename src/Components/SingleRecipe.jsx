@@ -35,7 +35,7 @@ export default function SingleRecipe() {
         <button onClick={() => navigate(-1)}>THIS IS A TEST</button>
         <div className="singlerecipe__body_wrapper">
             <div className="singlerecipe__body_photo">
-                <img src={oneRecipe?.fields.image[0].fields.file.url} alt="" />
+                <img className="single_recipe_image" src={oneRecipe?.fields.image[0].fields.file.url} alt="" />
             </div>
             <div className="singlerecipe__body_context_wrapper">
                 <div className="singlerecipe__body_context_title">
