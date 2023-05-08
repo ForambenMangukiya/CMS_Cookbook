@@ -6,36 +6,41 @@ import { Typography, Rating } from "@mui/material";
 
 
 export default function SingleRecipe() {
-    const { id } = useParams();
+
+    const { recipeId } = useParams();
+    const navigate = useNavigate();
+    
     const location = useLocation();
     const propsData = location.state;
 
 
-    // const oneRecipe = propsData.recipes.find(
-    //     (recipe) => recipe.fields.id === Number(recipeID)
-    // );
+    const oneRecipe = propsData?.propsData.recipes?.find(
+        (recipes) => recipes.fields.id === Number(recipeId)
+    );
+
+    console.log("this is single recipe", oneRecipe)
    
-    console.log("This is recipes", propsData?.recipes)    
-    console.log("This is singlerecipe ID",propsData?.recipes[8].fields.id)
+    // console.log("This is recipes", propsData?.recipes)    
+    // console.log("This is singlerecipe ID",propsData?.recipes[8].fields.id)
 
-    let ingredients = propsData?.recipes[10].fields.ingredients.map((lines, index) => <li key={index}>{lines}</li>)
+    let ingredients = oneRecipe?.fields.ingredients.map((lines, index) => <li key={index}>{lines}</li>)
 
-    let instructions = propsData?.recipes[10].fields.instructions.map((lines, index) => <li key={index}>{lines}</li>)
+    let instructions = oneRecipe?.fields.instructions.map((lines, index) => <li key={index}>{lines}</li>)
 
   return (
     <div className="singlerecipe__wrapper">
         <div className="singlerecipe__header">
             <Navbar />
         </div>
+        <button onClick={() => navigate(-1)}>THIS IS A TEST</button>
         <div className="singlerecipe__body_wrapper">
             <div className="singlerecipe__body_photo">
-                <img src={propsData?.recipes[10].fields.image[0].fields.file.url} alt="" />
+                <img src={oneRecipe?.fields.image[0].fields.file.url} alt="" />
             </div>
             <div className="singlerecipe__body_context_wrapper">
                 <div className="singlerecipe__body_context_title">
-                    Name: {propsData?.recipes[10].fields.name}    
-                    <Rating name="disabled" value={propsData.recipes[10].fields.difficulty} max={3} disabled />
-                                 
+                    <h2>{oneRecipe?.fields.name}</h2>    
+                    <Typography component="legend" style={{ display:"flex", alignItems:"flex-end" }}>Difficulty <Rating name="disabled" style={{ opacity: 1 }} value={oneRecipe.fields.difficulty} max={3} disabled /></Typography>            
                 </div>                
                 <div className="singlerecipe__body_ingredients">
                     <h5>Ingredients: <ul>{ingredients}</ul></h5> <br />
