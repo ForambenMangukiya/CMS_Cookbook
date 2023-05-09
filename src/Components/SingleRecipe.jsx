@@ -53,7 +53,8 @@ export default function SingleRecipe() {
             </div>
         </div>
         <div className="singlerecipe__footer">
-        <Footer/>
+        {/* <Footer/>  */}
+
         </div>
     </div>
   )
