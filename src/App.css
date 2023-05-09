@@ -201,6 +201,7 @@ img {
     flex-direction: row;
     padding: 10px 10px 0px 10px;
     gap: 10px;
+    height: 55%;
   }
 
   .singlerecipe__body_context_title {
@@ -238,7 +239,7 @@ img {
     background-position: center;
     /* width: 100%; */
     object-fit: scale-down;
-    aspect-ratio: unset;
+    aspect-ratio: 1.5;
   }
   
 }
