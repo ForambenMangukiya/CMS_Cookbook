@@ -38,7 +38,7 @@
   hsl(49deg 100% 49%) 85%,
   hsl(55deg 100% 50%) 100%
 );
-
+overflow: hidden;
 }
 
 .singlerecipe__header {
@@ -201,7 +201,7 @@ img {
     flex-direction: row;
     padding: 10px 10px 0px 10px;
     gap: 10px;
-    height: 55%;
+    height: 25%;
   }
 
   .singlerecipe__body_context_title {
