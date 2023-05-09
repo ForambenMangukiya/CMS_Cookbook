@@ -37,7 +37,7 @@ export default function CategoryPage () {
             <CssBaseline />
             <main>
                 <div className="category_page">
-                    <Container maxWidth={'lg'} disableGutters>
+                    <Container maxWidth={'lg'} disableGutters >
                         <Typography variant="h3" align="center" color="textPrimary" gutterBottom>
                             Category Page
                         </Typography>
@@ -60,8 +60,8 @@ export default function CategoryPage () {
                         </Select>
                         </FormControl>
                         <div>
-               
-                            <Grid container spacing={2} sx={{ml:1,mr:5, 
+               {}
+                            <Grid container spacing={2} sx={{/* ml:1,mr:1 */
      }} >
                                 {data.map(i=>{
                                 return (<CategoryItem state={{ propsData }} name={i.fields.name} image={i.fields.image[0].fields.file.url} id={i.fields.id} key={i.fields.id} difficulty={i.fields.difficulty} />)

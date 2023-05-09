@@ -1,5 +1,8 @@
 /* =========App.js =================== */
+html,body {
 
+  overflow-x: hidden;
+}
 .App {
   display: flex;
   flex-direction: column;
@@ -123,6 +126,7 @@
   /* color:rgb(62, 61, 61); */
   
 }
+
 
 img {
     -webkit-background-size: cover;
@@ -251,6 +255,10 @@ img {
 
   body {
     margin: 0;
+  }
+
+  .css-1p4tas-MuiContainer-root {
+    padding:1rem;
   }
 
   .singlerecipe__wrapper {
