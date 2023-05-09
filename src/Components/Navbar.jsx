@@ -5,6 +5,8 @@ import { CSSTransition } from "react-transition-group";
 
 export default function Navbar({recipes}) {
 
+  console.log("This is from the navbar", recipes)
+
   const [isNavVisible, setNavVisibility] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -30,8 +32,6 @@ export default function Navbar({recipes}) {
     setNavVisibility(!isNavVisible);
   };
 
-
-  console.log("This is logging the NAVBAR", recipes);
   return (
 
     <div className="Header">
@@ -52,8 +52,8 @@ export default function Navbar({recipes}) {
     <nav className="Nav">
       
         <NavLink  to="/">Home</NavLink>
-        <NavLink to="/singlerecipe" state={{ recipes }}>Single Recipe</NavLink>
-        <NavLink  to="/categories"> Categories </NavLink>
+        <NavLink to="/contact">Contact</NavLink>
+        <NavLink  to="/categories" state={{ recipes }}> Categories </NavLink>
         <NavLink  to="/about">About</NavLink>
         </nav>
 

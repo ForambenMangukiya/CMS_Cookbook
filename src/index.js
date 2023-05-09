@@ -4,19 +4,29 @@ import './index.css';
 import App from './App';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SingleRecipe from './Components/SingleRecipe';
+import CategoryPage from './Components/CategoryPage';
+import FooterLeft from './Components/footer/FooterLeft';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
   },
+  // {
+  //   path: "/contact",
+  //   element: <SingleRecipe/>,
+  // },
   {
-    path: "/singlerecipe",
+    path: "/contact",
+    element: <FooterLeft />
+  },
+  {
+    path: "/singlerecipe/:recipeId",
     element: <SingleRecipe/>,
   },
   {
-    path: "/singlerecipe/:id",
-    element: <SingleRecipe/>,
+    path: "/categories",
+    element: <CategoryPage />,
   }
 ]);
 

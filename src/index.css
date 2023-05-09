@@ -5,6 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-image: url(./img/Landing_page_2_Image.webp); */
+  min-width: 100%;
+  min-width: 100%;
+  background-size: 100%;
+  background-position: 100%;
+  background-repeat: no-repeat;
 }
 
 code {

@@ -4,7 +4,10 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url(./img/landing_page_bckg.jpg);
+  background-color: #1e1e2a;
+  background-image: url(./img/Landing_page_2_Image.webp);
+  position: fixed;
+  min-width: 100%;
   background-size: 100%;
   background-position: 100%;
   background-repeat: no-repeat;
@@ -21,43 +24,395 @@
   height: 100vh;
   flex-direction: column;
   justify-content: space-between;
+  color: rgb(0, 0, 0);
+  background-image: linear-gradient(
+  35deg,
+  hsl(349deg 84% 22%) 0%,
+  hsl(0deg 62% 31%) 0%,
+  hsl(10deg 66% 36%) 6%,
+  hsl(18deg 70% 40%) 16%,
+  hsl(25deg 75% 44%) 28%,
+  hsl(31deg 82% 46%) 42%,
+  hsl(38deg 93% 47%) 56%,
+  hsl(44deg 100% 47%) 70%,
+  hsl(49deg 100% 49%) 85%,
+  hsl(55deg 100% 50%) 100%
+);
+
 }
 
 .singlerecipe__header {
-  border: 2px solid black;
+ 
 }
 
 .singlerecipe__body_wrapper {
   display: flex;
-  border: 2px solid black;
+  height: 65%;
 }
 
 .singlerecipe__body_photo {
   padding: 15px;
-  border: 2px solid black;
 }
+
+.singlerecipe__body_photo img {  
+  width: 100%;
+  height: 100%;  
+  }  
 
 .singlerecipe__body_context_wrapper {
   display: flex;
   width: 100%;
   flex-direction: column;
   justify-content: space-between;
-  border: 2px solid black;
   padding: 10px;
 }
 
 .singlerecipe__body_context_title {
-  
+  display: flex;
+  justify-content: space-around;
+}
+.singlerecipe__body_context_title h2 {
+  margin: 0;
+}
+
+.css-iljtu2-MuiRating-root.Mui-disabled {
+  opacity: 1;
 }
 
 .singlerecipe__body_ingredients {
-  border: 2px solid black;
+  padding: 10px;
+  overflow-y: scroll;
+  width: 65%;
+}
+
+.singlerecipe__body_ingredients::-webkit-scrollbar {
+  display: none;
+}
+
+.singlerecipe__body_ingredients h5 ul {
+  padding-left: 20px;
 }
 
 .singlerecipe__body_instructions {
-  border: 2px solid black;
+  list-style: none;
+  padding: 10px;
+  width: 65%;
+  overflow-x: hidden;
+}
+
+.singlerecipe__body_instructions::-webkit-scrollbar {
+  display: none;
+}
+
+.singlerecipe__body_instructions h5 ul {
+  list-style-type: none;
+  padding-left: 5px;
 }
 
 .singlerecipe__footer {
-  border: 2px solid black;
+}
+
+/* =========Category Page =================== */
+.category_page a {
+  text-decoration: none;
+ 
+}
+.category_page .item:hover {
+  /* text-decoration: none; */
+  /* background-color: rgb(193, 190, 190); */
+  /* color:rgb(62, 61, 61); */
+  
+}
+
+img {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-position: center;
+    background-position: center;
+    /* width: 100%; */
+    object-fit: scale-down;
+    aspect-ratio: 1.2;  
+}
+
+/*============ Media Query ============*/
+
+@media (max-width: 992px) {
+  
+  .App {
+    background-size: 200%;
+    background-color: #1e1e2a;
+  }
+}
+
+@media (max-width: 576px){
+
+  .App {
+    min-height: 100%;
+    height: 100vh;
+    background-size: 300%;
+    background-color: #1e1e2a;
+    background-position: 50%;
+  }
+}
+
+@media (max-width: 850px) {
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .singlerecipe__wrapper {
+    display: flex;
+    height: 100vh;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(
+      35deg,
+      hsl(349deg 84% 22%) 0%,
+      hsl(0deg 62% 31%) 0%,
+      hsl(10deg 66% 36%) 6%,
+      hsl(18deg 70% 40%) 16%,
+      hsl(25deg 75% 44%) 28%,
+      hsl(31deg 82% 46%) 42%,
+      hsl(38deg 93% 47%) 56%,
+      hsl(44deg 100% 47%) 70%,
+      hsl(49deg 100% 49%) 85%,
+      hsl(55deg 100% 50%) 100%
+    );
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .singlerecipe__body_wrapper {
+    display: flex;
+    height: 65vh;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .singlerecipe__body_context_wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 10px 10px 0px 10px;
+    gap: 10px;
+    height: 55%;
+  }
+
+  .singlerecipe__body_context_title {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    top: 40px;
+    position: relative;
+    height: 50%;
+  }
+
+  .singlerecipe__body_instructions {
+    list-style: none;
+    padding: 0 0 0 10px;
+    /* width: 65%; */
+    overflow-x: hidden;
+    line-height: 1.4;
+    /* overflow: hidden; */
+    max-height: 400px;
+  }
+
+  .singlerecipe__footer {
+    flex-shrink: 0;
+  }
+
+  h5 {
+    max-height: 100%;
+    overflow: hidden;
+  }
+
+  img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-position: center;
+    background-position: center;
+    /* width: 100%; */
+    object-fit: scale-down;
+    aspect-ratio: 1.5;
+  } 
+}
+
+@media (max-width: 414px) {
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .singlerecipe__wrapper {
+    display: flex;
+    height: 100vh;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(
+      35deg,
+      hsl(349deg 84% 22%) 0%,
+      hsl(0deg 62% 31%) 0%,
+      hsl(10deg 66% 36%) 6%,
+      hsl(18deg 70% 40%) 16%,
+      hsl(25deg 75% 44%) 28%,
+      hsl(31deg 82% 46%) 42%,
+      hsl(38deg 93% 47%) 56%,
+      hsl(44deg 100% 47%) 70%,
+      hsl(49deg 100% 49%) 85%,
+      hsl(55deg 100% 50%) 100%
+    );
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .singlerecipe__body_wrapper {
+    display: flex;
+    height: 65vh;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .singlerecipe__body_context_wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 10px 10px 0px 10px;
+    gap: 10px;
+    height: 85%;
+  }
+
+  .singlerecipe__body_context_title {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    top: 40px;
+    position: relative;
+    height: 50%;
+  }
+
+  .singlerecipe__body_instructions {
+    list-style: none;
+    padding: 0 0 0 10px;
+    /* width: 65%; */
+    overflow-x: hidden;
+    line-height: 1.4;
+    /* overflow: hidden; */
+    max-height: 400px;
+  }
+
+  .singlerecipe__footer {
+    flex-shrink: 0;
+  }
+
+  h5 {
+    max-height: 100%;
+    overflow: hidden;
+  }
+
+  img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-position: center;
+    background-position: center;
+    /* width: 100%; */
+    object-fit: scale-down;
+    aspect-ratio: 1.5;
+  }
+}
+
+@media (max-width: 375px) {
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .singlerecipe__wrapper {
+    display: flex;
+    height: 100vh;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(
+      35deg,
+      hsl(349deg 84% 22%) 0%,
+      hsl(0deg 62% 31%) 0%,
+      hsl(10deg 66% 36%) 6%,
+      hsl(18deg 70% 40%) 16%,
+      hsl(25deg 75% 44%) 28%,
+      hsl(31deg 82% 46%) 42%,
+      hsl(38deg 93% 47%) 56%,
+      hsl(44deg 100% 47%) 70%,
+      hsl(49deg 100% 49%) 85%,
+      hsl(55deg 100% 50%) 100%
+    );
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .singlerecipe__body_wrapper {
+    display: flex;
+    height: 65vh;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .singlerecipe__body_context_wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 10px 0px 0px 10px;
+    gap: 10px;
+    height: 70%;
+  }
+
+  .singlerecipe__body_context_title {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    top: 40px;
+    position: relative;
+    height: 50%;
+  }
+
+  .singlerecipe__body_instructions {
+    list-style: none;
+    padding: 0 0 0 10px;
+    /* width: 65%; */
+    overflow-x: hidden;
+    line-height: 1.4;
+    /* overflow: hidden; */
+    max-height: 400px;
+  }
+
+  .singlerecipe__footer {
+    flex-shrink: 0;
+  }
+
+  h5 {
+    max-height: 100%;
+    overflow: hidden;
+  }
+
+  img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-position: center;
+    background-position: center;
+    /* width: 100%; */
+    object-fit: scale-down;
+    aspect-ratio: 1.5;
+  }
 }
