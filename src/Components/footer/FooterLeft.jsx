@@ -1,6 +1,13 @@
+import './footerLeft.css'
+import Navbar from '../Navbar'
+
 export default function FooterLeft(){
 
   return(
+    <div className="conact_wrap">
+      
+            <Navbar />
+
     <div className="footer_left">
       <h3 className="footer_contact">CONTACT US</h3>
       <form className="footer_conact-form">
@@ -19,6 +26,7 @@ export default function FooterLeft(){
         <button className="footer_submit" type="submit">Submit</button>
       </form>
       
+    </div>
     </div>
   )
 }
