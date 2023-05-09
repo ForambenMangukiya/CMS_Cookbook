@@ -38,7 +38,7 @@ export default function Navbar({recipes}) {
 
     <header className="head">
     <img src={require("../img/logo.png")} className="Logo" alt="logo"/>
-    <NavLink className="page" to="/">Name of Page</NavLink>
+    <NavLink className="page" to="/">Flavorful Feast</NavLink>
     {/* <img className="logo" src="./src\img\cookbook.png"  /> */}
     </header>
 

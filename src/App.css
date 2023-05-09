@@ -1,5 +1,8 @@
 /* =========App.js =================== */
+html,body {
 
+  overflow-x: hidden;
+}
 .App {
   display: flex;
   flex-direction: column;
@@ -38,7 +41,7 @@
   hsl(49deg 100% 49%) 85%,
   hsl(55deg 100% 50%) 100%
 );
-
+overflow: hidden;
 }
 
 .singlerecipe__header {
@@ -124,6 +127,7 @@
   
 }
 
+
 img {
     -webkit-background-size: cover;
     background-size: cover;
@@ -201,7 +205,7 @@ img {
     flex-direction: row;
     padding: 10px 10px 0px 10px;
     gap: 10px;
-    height: 55%;
+    height: 25%;
   }
 
   .singlerecipe__body_context_title {
@@ -251,6 +255,10 @@ img {
 
   body {
     margin: 0;
+  }
+
+  .css-1p4tas-MuiContainer-root {
+    padding:1rem;
   }
 
   .singlerecipe__wrapper {

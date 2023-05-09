@@ -1,4 +1,5 @@
 .footer{
+  
   position: relative;
   display: flex;
   justify-content: center;
@@ -7,7 +8,9 @@
   /* background-color: #282c34; */
 }
 
+
 .footer_wrap{
+  
   max-height: 15rem;
   position: relative;
   background-color: transparent;
@@ -183,8 +186,10 @@
   }
 
   .footer_content{
-    padding: 0;
+    padding: 0px;
     flex-direction: column;
+    gap: 0px;
+
   }
 
   .footer_right{

@@ -32,7 +32,7 @@ export default function SingleRecipe() {
         <div className="singlerecipe__header">
             <Navbar />
         </div>
-        <button onClick={() => navigate(-1)}>THIS IS A TEST</button>
+        <button onClick={() => navigate(-1)}>GO BACK BUTTON</button>
         <div className="singlerecipe__body_wrapper">
             <div className="singlerecipe__body_photo">
                 <img className="single_recipe_image" src={oneRecipe?.fields.image[0].fields.file.url} alt="" />
@@ -54,6 +54,7 @@ export default function SingleRecipe() {
         </div>
         <div className="singlerecipe__footer">
         {/* <Footer/>  */}
+
         </div>
     </div>
   )
