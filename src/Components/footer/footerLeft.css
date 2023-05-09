@@ -1,7 +1,6 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 body{
   height: 100vh;
@@ -38,29 +37,17 @@ body{
   gap: 1rem;
 }
 
-.footer_content{
-  display: flex;
-  gap: 3rem;
-  justify-content: center;
-  font-size: larger;
-  color: white;
-  text-shadow: 0 0 2px black;
-  -webkit-text-stroke: .5px black;
-  position: relative;
-  overflow: none;
-}
-
-.footer_conact-form_lable{
+.footer_contact-form_lable{
   font-size: larger;
 }
 
 
 .footer_contact{
-  font-size: medium;
+  font-size: larger;
   margin: 0;
 }
 
-.footer_conact-form{
+.footer_contact-form{
   display: flex;
   flex-direction: column;
 }
