@@ -6,6 +6,7 @@ import FooterCenter from "./FooterCenter";
 export default function Footer(){
   return(
     <div className="footer">
+
       <div className="footer_wrap">
       <div className="footer_content">
         <FooterCenter />

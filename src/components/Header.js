@@ -5,7 +5,7 @@ export default function Header () {
 
     return(
     <div className="header">
-       <img className="logo" src="src\img\cookbook.png"  />
+       
         <Navbar/>
 </div>
     );
