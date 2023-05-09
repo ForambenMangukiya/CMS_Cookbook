@@ -13,7 +13,7 @@ export default function CategoryPage () {
     
     const [ dropDown,setDropDown ] = useState("All")
     const [ data, setData ] = useState(propsData.recipes)
-    
+    console.log(data)
     const handleChange = (e) => {
         setDropDown(e.target.value)
     }
@@ -64,7 +64,7 @@ export default function CategoryPage () {
                             <Grid container spacing={2} sx={{ml:1,mr:5, 
      }} >
                                 {data.map(i=>{
-                                return (<CategoryItem state={{ propsData }} name={i.fields.name} image={i.fields.image[0].fields.file.url} id={i.fields.id} key={i.fields.id} />)
+                                return (<CategoryItem state={{ propsData }} name={i.fields.name} image={i.fields.image[0].fields.file.url} id={i.fields.id} key={i.fields.id} difficulty={i.fields.difficulty} />)
                             })}
                             </Grid>
                         </div>
