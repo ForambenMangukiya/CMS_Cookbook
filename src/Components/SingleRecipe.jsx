@@ -15,7 +15,7 @@ export default function SingleRecipe() {
 
 
     const oneRecipe = propsData?.propsData.recipes?.find(
-        (recipes) => recipes.fields.id === Number(recipeId)
+        (recipes) => recipes.id === Number(recipeId)
     );
 
     console.log("this is single recipe", oneRecipe)
@@ -23,9 +23,9 @@ export default function SingleRecipe() {
     // console.log("This is recipes", propsData?.recipes)    
     // console.log("This is singlerecipe ID",propsData?.recipes[8].fields.id)
 
-    let ingredients = oneRecipe?.fields.ingredients.map((lines, index) => <li key={index}>{lines}</li>)
+    let ingredients = oneRecipe?.ingredients.map((lines, index) => <li key={index}>{lines}</li>)
 
-    let instructions = oneRecipe?.fields.instructions.map((lines, index) => <li key={index}>{lines}</li>)
+    let instructions = oneRecipe?.instructions.map((lines, index) => <li key={index}>{lines}</li>)
 
   return (
     <div className="singlerecipe__wrapper">
@@ -35,12 +35,12 @@ export default function SingleRecipe() {
         <button onClick={() => navigate(-1)}>GO BACK BUTTON</button>
         <div className="singlerecipe__body_wrapper">
             <div className="singlerecipe__body_photo">
-                <img className="single_recipe_image" src={oneRecipe?.fields.image[0].fields.file.url} alt="" />
+                <img className="single_recipe_image"  alt="" />
             </div>
             <div className="singlerecipe__body_context_wrapper">
                 <div className="singlerecipe__body_context_title">
-                    <h2>{oneRecipe?.fields.name}</h2>    
-                    <Typography component="legend" style={{ display:"flex", alignItems:"flex-end" }}>Difficulty <Rating name="disabled" style={{ opacity: 1 }} value={oneRecipe.fields.difficulty} max={3} disabled /></Typography>            
+                    <h2>{oneRecipe?.recipe_name}</h2>    
+                    <Typography component="legend" style={{ display:"flex", alignItems:"flex-end" }}>Difficulty <Rating name="disabled" style={{ opacity: 1 }} value={oneRecipe.difficulty} max={3} disabled /></Typography>            
                 </div>                
                 <div className="singlerecipe__body_ingredients">
                     <h5>Ingredients: <ul>{ingredients}</ul></h5> <br />
@@ -53,7 +53,7 @@ export default function SingleRecipe() {
             </div>
         </div>
         <div className="singlerecipe__footer">
-        {/* <Footer/>  */}
+        <Footer/> 
 
         </div>
     </div>
