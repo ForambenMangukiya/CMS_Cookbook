@@ -1,6 +1,8 @@
 import { Typography, CardMedia,  Grid, Card, Rating } from '@mui/material'
 import { Link, useLocation} from "react-router-dom"
 export default function CategoryItem ({name, image, id, difficulty}) {
+    const imagePath = process.env.PUBLIC_URL + `/img/${id}.jpg`
+    console.log(imagePath)
 
     const location = useLocation();
     const propsData = location.state;
@@ -10,7 +12,7 @@ export default function CategoryItem ({name, image, id, difficulty}) {
             <Link to={`/singlerecipe/${id}`} state={{ propsData }}>
 
         <Card className='item' >
-            <CardMedia component="img" src={image}/>
+            <CardMedia component="img" src={imagePath}/>
             <Typography variant="h6" align="center"> {name}</Typography>
             <Rating
                 name="simple-controlled"

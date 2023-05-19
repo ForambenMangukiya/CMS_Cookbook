@@ -17,6 +17,7 @@ export default function SingleRecipe() {
     const oneRecipe = propsData?.propsData.recipes?.find(
         (recipes) => recipes.id === Number(recipeId)
     );
+    const imagePath = process.env.PUBLIC_URL + `/img/${oneRecipe.id}.jpg`
 
     console.log("this is single recipe", oneRecipe)
    
@@ -35,7 +36,7 @@ export default function SingleRecipe() {
         <button onClick={() => navigate(-1)}>GO BACK BUTTON</button>
         <div className="singlerecipe__body_wrapper">
             <div className="singlerecipe__body_photo">
-                <img className="single_recipe_image"  alt="" />
+                <img className="single_recipe_image" src={imagePath}  alt="" />
             </div>
             <div className="singlerecipe__body_context_wrapper">
                 <div className="singlerecipe__body_context_title">

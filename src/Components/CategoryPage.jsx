@@ -64,7 +64,7 @@ export default function CategoryPage () {
                             <Grid container spacing={2} sx={{/* ml:1,mr:1 */
      }} >
                                 {data.map(i=>{
-                                return (<CategoryItem state={{ propsData }} name={i.recipe_name}  id={i.id} key={i.id} difficulty={i.difficulty} />)
+                                return (<CategoryItem state={{ propsData }} name={i.recipe_name} id={i.id} key={i.id} difficulty={i.difficulty} />)
                             })}
                             </Grid>
                         </div>
