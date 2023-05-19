@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { CSSTransition } from "react-transition-group";
 
 export default function Navbar({recipes}) {
+  const imagePath = process.env.PUBLIC_URL + `/img/logo.png`
 
   console.log("This is from the navbar", recipes)
 
@@ -37,7 +38,7 @@ export default function Navbar({recipes}) {
     <div className="Header">
 
     <header className="head">
-    <img src={require("../img/logo.png")} className="Logo" alt="logo"/>
+    <img src={imagePath} className="Logo" alt="logo"/>
     <NavLink className="page" to="/">Flavorful Feast</NavLink>
     {/* <img className="logo" src="./src\img\cookbook.png"  /> */}
     </header>
