@@ -10,12 +10,12 @@ export default function App() {
   const [recipes, setRecipes] = useState([])
 
   useEffect(() => {
-    client
-    .getEntries()
-    .then((data) => {
-    setRecipes(data.items);}
-  )
-    .catch(err => console.log(err));
+  //   client
+  //   .getEntries()
+  //   .then((data) => {
+  //   setRecipes(data.items);}
+  // )
+  //   .catch(err => console.log(err));
     fetchData()
   }, []);
 console.group("This is console log recipes", recipes)
@@ -40,7 +40,8 @@ console.group("This is console log recipes", recipes)
   async function fetchData() {
   const response = await fetch("http://localhost:3000/");
   const data = await response.json();
-  console.log("This is consolelog data", data);
+  setRecipes(data)
+  console.log("This is consolelog data from our server", data);
 }
 
 
